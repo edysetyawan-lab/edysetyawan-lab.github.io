@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Edy Setyawan, PhD: marine scientist studying the movement and population ecology of manta rays, sharks and other elasmobranchs in Indonesia.">
+<meta property="og:title" content="Edy Setyawan, PhD">
+<meta property="og:description" content="Elasmobranch research, conservation and underwater photography from Raja Ampat, Indonesia.">
+<meta property="og:image" content="https://edysetyawan.github.io/images/manta-ventral.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A1C24'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23E39B68' text-anchor='middle'%3EES%3C/text%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>Edy Setyawan, PhD</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single scholarly column (max 72rem) bracketed by two dark "underwater" bands — the photo hero and the photography gallery. */
+:root{
+  --bg:#F3F6F6; --surface:#FFFFFF; --ink:#13232B; --muted:#56676E; --line:#D3DCDE;
+  --accent:#9A4A22;            /* epaulette-spot rust */
+  --accent-soft:#F2E4DA;
+  --deep:#0A1C24; --deep-fg:#E6EEF0; --deep-muted:#9FB3BA; --deep-accent:#E39B68;
+  --display:"Newsreader", "Iowan Old Style", Georgia, serif;
+  --body:"Public Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --max:72rem;
+  --gutter-l:max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r:max(16px, env(safe-area-inset-right, 0px));
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0C161B; --surface:#12212A; --ink:#E3EBED; --muted:#93A5AB; --line:#22353E;
+    --accent:#E39B68; --accent-soft:#2A1E17; --deep:#061217; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0C161B; --surface:#12212A; --ink:#E3EBED; --muted:#93A5AB; --line:#22353E;
+  --accent:#E39B68; --accent-soft:#2A1E17; --deep:#061217; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:4.5rem}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--accent);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+i.sp, .sp{font-style:italic}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;text-wrap:balance;margin:0}
+h2{font-size:clamp(2rem,4vw,2.8rem);letter-spacing:-.01em}
+h3{font-size:1.35rem}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
+.label{font:500 .72rem/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+section{padding-block:clamp(3.5rem,8vw,6rem)}
+.sec-head{display:grid;gap:.75rem;margin-bottom:2.5rem;max-width:44rem}
+.sec-head p{color:var(--muted);font-size:1.05rem}
+
+/* ---------- header ---------- */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--deep)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--deep) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--deep-fg)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:3.75rem;flex-wrap:wrap}
+.brand{font:500 1.15rem/1 var(--display);color:var(--deep-fg);text-decoration:none;white-space:nowrap}
+.brand span{color:var(--deep-muted);font-size:.95rem}
+.nav{display:flex;gap:1.4rem;flex-wrap:wrap}
+.nav a{color:var(--deep-muted);text-decoration:none;font-size:.9rem}
+.nav a:hover{color:var(--deep-fg)}
+@media (max-width:760px){
+  .top .wrap{padding-block:.6rem}
+  .nav{gap:.25rem 1rem;width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:.15rem}
+  .nav a{white-space:nowrap;font-size:.85rem}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--deep);color:var(--deep-fg);overflow:hidden;padding:0}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,18,23,.92) 0%,rgba(6,18,23,.7) 38%,rgba(6,18,23,0) 70%)}
+.hero .wrap{position:relative;z-index:1;padding-block:clamp(5rem,13vw,9.5rem) clamp(3.5rem,8vw,6rem)}
+.hero-text{max-width:34rem;display:grid;gap:1.4rem}
+.hero .label{color:var(--deep-accent)}
+.hero h1{font-size:clamp(2.6rem,6.5vw,4.6rem);letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--deep-accent)}
+.lede{font-size:1.15rem;color:var(--deep-fg);opacity:.92;max-width:31rem}
+.creds{display:flex;flex-wrap:wrap;gap:.5rem}
+.creds span{font:500 .78rem/1 var(--body);border:1px solid rgba(230,238,240,.28);padding:.5rem .7rem;border-radius:999px;color:var(--deep-fg)}
+.cta{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.75rem 1.15rem;border-radius:6px;font:600 .92rem/1 var(--body);text-decoration:none;border:1px solid transparent}
+.btn.primary{background:var(--deep-accent);color:#1A0E07}
+.btn.ghost{border-color:rgba(230,238,240,.35);color:var(--deep-fg)}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+@media (max-width:700px){
+  .hero img{position:relative;height:auto;aspect-ratio:16/10;object-position:78% 50%}
+  .hero::after{display:none}
+  .hero .wrap{padding-block:2rem 3rem}
+}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem)}
+.prose{display:grid;gap:1.1rem;max-width:40rem;font-size:1.06rem}
+.prose p:first-child{font:400 1.45rem/1.45 var(--display)}
+.facts{display:grid;gap:2rem;align-content:start}
+.facts dl{margin:0;display:grid;gap:.85rem}
+.facts .row{display:grid;grid-template-columns:4.5rem minmax(0,1fr);gap:.75rem;padding-top:.85rem;border-top:1px solid var(--line)}
+.facts dt{font:500 .85rem/1.5 var(--mono);color:var(--accent);font-variant-numeric:tabular-nums}
+.facts dd{margin:0;font-size:.95rem}
+.facts dd small{display:block;color:var(--muted);font-size:.85rem}
+@media (max-width:820px){.about-grid{grid-template-columns:1fr}}
+
+/* ---------- findings ---------- */
+.findings{background:var(--surface);border-block:1px solid var(--line)}
+.find-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.5rem,3vw,2.5rem)}
+.find{display:grid;gap:.8rem;align-content:start;border-top:2px solid var(--accent);padding-top:1.25rem}
+.find p{color:var(--muted)}
+.find a.ref{font:500 .8rem/1.4 var(--mono)}
+@media (max-width:820px){.find-grid{grid-template-columns:1fr}}
+
+/* ---------- research ---------- */
+.species{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.sp-card{background:var(--bg);padding:1.5rem;display:grid;gap:.5rem;align-content:start}
+.sp-card .bin{font:italic 400 1.02rem/1.3 var(--display);color:var(--accent)}
+.sp-card p{color:var(--muted);font-size:.93rem}
+.methods{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem;align-items:center}
+.methods span.tag{font:500 .8rem/1 var(--body);background:var(--accent-soft);color:var(--ink);padding:.5rem .75rem;border-radius:4px}
+@media (max-width:900px){.species{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.species{grid-template-columns:1fr}}
+
+/* ---------- lab ---------- */
+.lab{background:var(--surface);border-block:1px solid var(--line)}
+.lab-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:start}
+.lab-grid figure{margin:0}
+.lab-grid figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.lab-grid figcaption{font-size:.82rem;color:var(--muted);margin-top:.6rem}
+.lab-body{display:grid;gap:1.25rem}
+.lab-body ul{margin:0;padding-left:1.1rem;display:grid;gap:.45rem}
+.callout{border-left:2px solid var(--accent);padding:.25rem 0 .25rem 1rem;color:var(--muted)}
+@media (max-width:820px){.lab-grid{grid-template-columns:1fr}}
+
+/* ---------- publications ---------- */
+.pub-tools{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:center;justify-content:space-between;margin-bottom:1.5rem}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{font:500 .85rem/1 var(--body);background:transparent;color:var(--muted);border:0;padding:.65rem .95rem;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.profiles{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.9rem}
+ol.pubs{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.pubs li{display:grid;grid-template-columns:4rem minmax(0,1fr);gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.pubs .yr{font:500 .9rem/1.6 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.pubs .t{font:400 1.12rem/1.4 var(--display);display:block;margin-bottom:.2rem;color:var(--ink)}
+.pubs .a{font-size:.88rem;color:var(--muted)}
+.pubs .a b{color:var(--ink);font-weight:600}
+.pubs .j{font-size:.88rem}
+.pubs .j a{font-family:var(--mono);font-size:.8rem;word-break:break-all}
+.pubs li[hidden]{display:none}
+details.more{margin-top:2.5rem;border-top:1px solid var(--line);padding-top:1rem}
+details.more summary{cursor:pointer;font:400 1.35rem/1.3 var(--display);padding:.5rem 0}
+details.more ul{margin:1rem 0 0;padding-left:1.1rem;display:grid;gap:.7rem;font-size:.93rem;color:var(--muted)}
+.lang{font:500 .68rem/1 var(--mono);border:1px solid var(--line);padding:.2rem .35rem;border-radius:3px;margin-right:.4rem;color:var(--muted);vertical-align:2px}
+@media (max-width:560px){.pubs li{grid-template-columns:1fr;gap:.2rem}}
+
+/* ---------- photography ---------- */
+.photo{background:var(--deep);color:var(--deep-fg)}
+.photo .label{color:var(--deep-accent)}
+.photo .sec-head p{color:var(--deep-muted)}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-flow:dense;gap:.6rem}
+.gallery button{all:unset;cursor:zoom-in;position:relative;overflow:hidden;border-radius:3px;aspect-ratio:3/2;background:#0E2730}
+.gallery button:focus-visible{outline:2px solid var(--deep-accent);outline-offset:2px}
+.gallery img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.gallery button:hover img{transform:scale(1.03)}
+.gallery .big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.gallery .wide{grid-column:span 2;aspect-ratio:auto}
+@media (prefers-reduced-motion: reduce){.gallery img{transition:none}}
+@media (max-width:700px){
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gallery .big{grid-row:span 1;aspect-ratio:16/9}
+  .gallery .wide{grid-column:span 1;aspect-ratio:3/2}
+}
+.credit{margin-top:1.25rem;font-size:.82rem;color:var(--deep-muted)}
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(96vw,1400px);width:100%;color:var(--deep-fg)}
+dialog.lb::backdrop{background:rgba(3,10,13,.92)}
+.lb figure{margin:0;display:grid;gap:.75rem}
+.lb img{max-height:80vh;width:auto;margin:0 auto;border-radius:3px}
+.lb figcaption{text-align:center;font-size:.92rem;color:var(--deep-muted);padding:0 3rem}
+.lb .ctrl{position:fixed;top:50%;transform:translateY(-50%);background:rgba(10,28,36,.7);color:#E6EEF0;border:1px solid rgba(230,238,240,.25);width:2.75rem;height:2.75rem;border-radius:50%;font-size:1.3rem;cursor:pointer}
+.lb .prev{left:max(12px,env(safe-area-inset-left,0px))}
+.lb .next{right:max(12px,env(safe-area-inset-right,0px))}
+.lb .close{top:calc(14px + env(safe-area-inset-top,0px));transform:none;right:max(12px,env(safe-area-inset-right,0px))}
+
+/* ---------- contact / footer ---------- */
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:start}
+.contact-grid h2{font-size:clamp(2.2rem,5vw,3.4rem)}
+.mail{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin-top:1.5rem}
+.mail code{font:500 1.05rem/1.2 var(--mono);background:var(--surface);border:1px solid var(--line);padding:.75rem 1rem;border-radius:6px;user-select:all;word-break:break-all}
+.mail button{font:600 .88rem/1 var(--body);padding:.8rem 1rem;border-radius:6px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.links{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.links li{border-bottom:1px solid var(--line)}
+.links a{display:flex;justify-content:space-between;gap:1rem;padding:1rem 0;text-decoration:none;color:var(--ink)}
+.links a span:last-child{color:var(--muted);font:400 .82rem/1.6 var(--mono)}
+.links a:hover span:first-child{color:var(--accent)}
+@media (max-width:820px){.contact-grid{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);padding-block:2rem;font-size:.85rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Edy Setyawan <span>PhD</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#lab">Lab</a>
+      <a href="#publications">Publications</a>
+      <a href="#photography">Photography</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" aria-label="Introduction">
+  <img src="images/manta-ventral.jpg" alt="Underside of a manta ray showing its unique spot pattern against dark blue water" fetchpriority="high">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="label">Marine scientist · Raja Ampat, Indonesia</p>
+      <h1>Following sharks and rays to <em>protect</em> them.</h1>
+      <p class="lede">I study the movement and population ecology of manta rays, whale sharks and other elasmobranchs across Indonesia, and turn what we learn into stronger marine protection.</p>
+      <div class="creds">
+        <span>National Geographic Explorer</span>
+        <span>Pew Marine Fellow 2025</span>
+        <span>Co-founder, Elasmobranch Institute Indonesia</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#publications">Read the research</a>
+        <a class="btn ghost" href="#photography">See the photography</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="sec-head"><p class="label">About</p><h2>Fifteen years in Indonesia's seas</h2></div>
+      <div class="prose">
+        <p>Since 2013 I have followed the reef manta rays of Raja Ampat, and the work has grown to include whale sharks, thresher sharks and the endemic walking sharks of eastern Indonesia.</p>
+        <p>My research combines photo-identification, drones, acoustic and satellite telemetry, and network analysis to answer practical questions: where animals go, how long they stay, how populations change, and which habitats matter most. Those answers feed directly into the design and management of marine protected areas in Indonesia and beyond.</p>
+        <p>My PhD at the University of Auckland examined the movement ecology, population dynamics and conservation of reef manta rays in Raja Ampat. Today I am Lead Conservation Scientist at the Elasmobranch Institute Indonesia, which I co-founded.</p>
+      </div>
+    </div>
+    <div class="facts">
+      <div>
+        <p class="label" style="margin-bottom:.9rem">Education</p>
+        <dl>
+          <div class="row"><dt>2023</dt><dd>PhD, Marine Science<small>University of Auckland, New Zealand</small></dd></div>
+          <div class="row"><dt>2016</dt><dd>MSc, Marine and Antarctic Studies<small>University of Tasmania, Australia</small></dd></div>
+          <div class="row"><dt>2009</dt><dd>BSc, Marine Science and Technology<small>IPB University, Indonesia</small></dd></div>
+        </dl>
+      </div>
+      <div>
+        <p class="label" style="margin-bottom:.9rem">Fellowships &amp; awards</p>
+        <dl>
+          <div class="row"><dt>2025–28</dt><dd><a href="https://www.pew.org/en/projects/marine-fellows/fellows-directory/2025/edy--setyawan" target="_blank" rel="noopener">Pew Fellowship in Marine Conservation</a></dd></div>
+          <div class="row"><dt>2020–23</dt><dd>WWF Russell E. Train Fellowship</dd></div>
+          <div class="row"><dt>2023</dt><dd>Dean's List for doctoral excellence<small>University of Auckland</small></dd></div>
+          <div class="row"><dt>2022</dt><dd>Blues Award, Innovation<small>University of Auckland</small></dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY FINDINGS -->
+<section class="findings" aria-labelledby="find-h">
+  <div class="wrap">
+    <div class="sec-head"><p class="label">Key findings</p><h2 id="find-h">What the data showed</h2></div>
+    <div class="find-grid">
+      <article class="find">
+        <h3>The world's first confirmed reef manta ray nursery</h3>
+        <p>Eight years of monitoring confirmed that juvenile <i class="sp">Mobula alfredi</i> grow up in Wayag Lagoon, northern Raja Ampat. The finding helped shape the rezoning of the Waigeo Barat MPA to protect the lagoon.</p>
+        <a class="ref" href="https://doi.org/10.3389/fmars.2022.815094" target="_blank" rel="noopener">Front. Mar. Sci. 2022 →</a>
+      </article>
+      <article class="find">
+        <h3>Manta populations that are growing</h3>
+        <p>While reef manta rays decline globally, photo-identified populations in two Raja Ampat MPAs are increasing, a rare conservation success built on local protection.</p>
+        <a class="ref" href="https://doi.org/10.3389/fmars.2022.1014791" target="_blank" rel="noopener">Front. Mar. Sci. 2022 →</a>
+      </article>
+      <article class="find">
+        <h3>Measuring mantas from the air</h3>
+        <p>I developed a non-invasive method that uses small drones and photogrammetry to measure the body size of free-swimming manta rays accurately.</p>
+        <a class="ref" href="https://doi.org/10.3390/drones6030063" target="_blank" rel="noopener">Drones 2022 →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Research</p>
+      <h2>Species I work with</h2>
+      <p>My focus is spatial movement, habitat use and connectivity of conservation-priority elasmobranchs, from oceanic giants to sharks that walk across reef flats.</p>
+    </div>
+    <div class="species">
+      <div class="sp-card"><h3>Reef manta ray</h3><p class="bin">Mobula alfredi</p><p>Residency, connectivity and population trends across the Raja Ampat archipelago, using photo-ID, acoustic and satellite tags.</p></div>
+      <div class="sp-card"><h3>Oceanic manta ray</h3><p class="bin">Mobula birostris</p><p>Cleaning-station visits, deep-diving behaviour and population dynamics in the Bird's Head Seascape.</p></div>
+      <div class="sp-card"><h3>Whale shark</h3><p class="bin">Rhincodon typus</p><p>Demographics and residency of photo-identified sharks, and national patterns in strandings.</p></div>
+      <div class="sp-card"><h3>Pelagic thresher shark</h3><p class="bin">Alopias pelagicus</p><p>Satellite and passive acoustic telemetry to inform local conservation in central Indonesia.</p></div>
+      <div class="sp-card"><h3>Raja Ampat epaulette shark</h3><p class="bin">Hemiscyllium freycineti</p><p>Distribution, population genetics and fine-scale movement of an endemic walking shark.</p></div>
+      <div class="sp-card"><h3>Indo-Pacific leopard shark</h3><p class="bin">Stegostoma tigrinum</p><p>Part of my expanding work on reef-associated sharks in eastern Indonesia.</p></div>
+    </div>
+    <div class="methods">
+      <span class="label" style="margin-right:.5rem">Methods</span>
+      <span class="tag">Photo-identification</span>
+      <span class="tag">Drone photogrammetry</span>
+      <span class="tag">Acoustic telemetry</span>
+      <span class="tag">Satellite telemetry</span>
+      <span class="tag">Biologging</span>
+      <span class="tag">Network analysis</span>
+      <span class="tag">Population modelling</span>
+    </div>
+  </div>
+</section>
+
+<!-- LAB -->
+<section id="lab" class="lab">
+  <div class="wrap lab-grid">
+    <figure>
+      <img src="images/epaulette-reef-ledge-sm.jpg" srcset="images/epaulette-reef-ledge-sm.jpg 800w, images/epaulette-reef-ledge.jpg 2000w" sizes="(max-width:820px) 100vw, 36rem" alt="Epaulette shark resting on sand beneath a reef ledge at night" loading="lazy">
+      <figcaption>Raja Ampat epaulette shark, <i class="sp">Hemiscyllium freycineti</i>.</figcaption>
+    </figure>
+    <div class="lab-body">
+      <p class="label">The lab</p>
+      <h2>Elasmobranch Institute Indonesia</h2>
+      <p>I co-founded the Elasmobranch Institute Indonesia and have led its conservation science since 2024. We are an Indonesian research team working with government agencies, MPA managers and coastal communities to protect sharks and rays.</p>
+      <h3 style="margin-top:.5rem">Current project: Raja Ampat's walking sharks</h3>
+      <p>Supported by the Pew Fellowship in Marine Conservation (2025–2028), this project studies the endemic epaulette shark of Raja Ampat:</p>
+      <ul>
+        <li>Distribution surveys across the archipelago</li>
+        <li>Population genetics to measure connectivity and gene flow between sites</li>
+        <li>Biologging and passive acoustic tracking of movement and habitat use</li>
+        <li>Workshops with the Raja Ampat MPA management authority to put results into practice</li>
+      </ul>
+      <p class="callout">Students and researchers interested in collaborating are welcome to <a href="#contact">get in touch</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Publications</p>
+      <h2>Peer-reviewed papers</h2>
+      <p><span id="pub-count">24</span> papers. My name is in bold.</p>
+    </div>
+    <div class="pub-tools">
+      <div class="seg" role="group" aria-label="Filter publications">
+        <button type="button" id="f-all" aria-pressed="true">All papers</button>
+        <button type="button" id="f-lead" aria-pressed="false">First author</button>
+      </div>
+      <div class="profiles">
+        <a href="https://scholar.google.com/citations?user=SKaJSLcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://orcid.org/0000-0001-6629-5997" target="_blank" rel="noopener">ORCID</a>
+      </div>
+    </div>
+
+    <ol class="pubs" id="pubs">
+      <li><span class="yr">2025</span><div><span class="t">Spatio-temporal patterns, trends, and oceanographic drivers of whale shark strandings in Indonesia</span><span class="a">Putra, M. I. H., Wirasatriya, A., … <b>Setyawan, E.</b>, … Manessa, M. D. M.</span><div class="j"><i>Scientific Reports</i> 15, 36435 · <a href="https://doi.org/10.1038/s41598-025-20543-3" target="_blank" rel="noopener">doi:10.1038/s41598-025-20543-3</a></div></div></li>
+      <li><span class="yr">2025</span><div><span class="t">Deep diving behaviour in oceanic manta rays and its potential function</span><span class="a">Beale, C. S., Runtuboy, F., Sianipar, A., Beer, A. J., Erdmann, M., <b>Setyawan, E.</b>, et al.</span><div class="j"><i>Frontiers in Marine Science</i> 12, 1630451 · <a href="https://doi.org/10.3389/fmars.2025.1630451" target="_blank" rel="noopener">doi:10.3389/fmars.2025.1630451</a></div></div></li>
+      <li data-lead><span class="yr">2025</span><div><span class="t">Insights into the population demographics and residency patterns of photo-identified whale sharks <i>Rhincodon typus</i> in the Bird's Head Seascape, Indonesia</span><span class="a"><b>Setyawan, E.</b>, Hasan, A. W., Malaiholo, Y., Sianipar, A. B., Mambrasar, R., Meekan, M., et al.</span><div class="j"><i>Frontiers in Marine Science</i> 12, 1607027 · <a href="https://doi.org/10.3389/fmars.2025.1607027" target="_blank" rel="noopener">doi:10.3389/fmars.2025.1607027</a></div></div></li>
+      <li><span class="yr">2025</span><div><span class="t">Global tracking of marine megafauna space use reveals how to achieve conservation targets</span><span class="a">Sequeira, A. M. M., … <b>Setyawan, E.</b>, … Eguíluz, V. M.</span><div class="j"><i>Science</i> 388, 1086–1097 · <a href="https://doi.org/10.1126/science.adl0239" target="_blank" rel="noopener">doi:10.1126/science.adl0239</a></div></div></li>
+      <li data-lead><span class="yr">2025</span><div><span class="t">Staying close to home: horizontal movements of satellite-tracked reef manta rays <i>Mobula alfredi</i> (Krefft, 1868) in the world's largest manta sanctuary</span><span class="a"><b>Setyawan, E.</b>, Sianipar, A. B., Mambrasar, R., Izuan, M., Hasan, A. W., Fahmi, et al.</span><div class="j"><i>Fishes</i> 10, 66 · <a href="https://doi.org/10.3390/fishes10020066" target="_blank" rel="noopener">doi:10.3390/fishes10020066</a></div></div></li>
+      <li><span class="yr">2025</span><div><span class="t">Insights into cetacean sightings, abundance, and feeding associations: observations from the boat lift net fishery in the Kaimana important marine mammal area, Indonesia</span><span class="a">Putra, M. I. H., Malaiholo, Y., Sahri, A., <b>Setyawan, E.</b>, Herandarudewi, S. M. C., Hasan, A. W., et al.</span><div class="j"><i>Frontiers in Marine Science</i> 11 · <a href="https://doi.org/10.3389/fmars.2024.1431209" target="_blank" rel="noopener">doi:10.3389/fmars.2024.1431209</a></div></div></li>
+      <li data-lead><span class="yr">2024</span><div><span class="t">Spatial connectivity of reef manta rays across the Raja Ampat archipelago, Indonesia</span><span class="a"><b>Setyawan, E.</b>, Erdmann, M. V., Mambrasar, R., Ambafen, O., Hasan, A. W., Izuan, M., et al.</span><div class="j"><i>Royal Society Open Science</i> 11, 230895 · <a href="https://doi.org/10.1098/rsos.230895" target="_blank" rel="noopener">doi:10.1098/rsos.230895</a></div></div></li>
+      <li data-lead><span class="yr">2024</span><div><span class="t">First documented courtship behavior between <i>Mobula birostris</i> and <i>M. alfredi</i> at a coral reef cleaning station in Misool, Raja Ampat</span><span class="a"><b>Setyawan, E.</b>, Heinrichs, S., and Erdmann, M.</span><div class="j"><i>Diversity</i> 16, 319 · <a href="https://doi.org/10.3390/d16060319" target="_blank" rel="noopener">doi:10.3390/d16060319</a></div></div></li>
+      <li data-lead><span class="yr">2024</span><div><span class="t">Insights into the visitations of oceanic manta rays at cleaning stations on coral reefs in the Bird's Head Seascape, eastern Indonesia</span><span class="a"><b>Setyawan, E.</b>, Mambrasar, R., Sianipar, A. B., Hasan, A. W., Putra, M. I. H., Mofu, I., et al.</span><div class="j"><i>Frontiers in Fish Science</i> 2 · <a href="https://doi.org/10.3389/frish.2024.1432244" target="_blank" rel="noopener">doi:10.3389/frish.2024.1432244</a></div></div></li>
+      <li><span class="yr">2024</span><div><span class="t">Identifying spatial movements and residency of pelagic thresher sharks (<i>Alopias pelagicus</i>) using satellite and passive acoustic telemetry to inform local conservation in central Indonesia</span><span class="a">Shidqi, R. A., Erdmann, M. V., <b>Setyawan, E.</b>, Lezama-Ochoa, N., Sari, D. R., Sianipar, A. B., et al.</span><div class="j"><i>Frontiers in Fish Science</i> 2 · <a href="https://doi.org/10.3389/frish.2024.1391062" target="_blank" rel="noopener">doi:10.3389/frish.2024.1391062</a></div></div></li>
+      <li><span class="yr">2024</span><div><span class="t">The first record of the southbound movements of satellite-tagged pygmy blue whales (<i>B. m. brevicauda</i>) from Savu Sea (Indonesia) to the subantarctic waters</span><span class="a">Mustika, P. L. K., Ratha, I. M. J., <b>Setyawan, E.</b>, Prinanda, M. O., Rusydi, R., Purnomo, F. S., et al.</span><div class="j"><i>Marine Mammal Science</i>, e13167 · <a href="https://doi.org/10.1111/mms.13167" target="_blank" rel="noopener">doi:10.1111/mms.13167</a></div></div></li>
+      <li><span class="yr">2022</span><div><span class="t">Diving into the vertical dimension of elasmobranch movement ecology</span><span class="a">Andrzejaczek, S., … <b>Setyawan, E.</b>, … Curnick, D. J.</span><div class="j"><i>Science Advances</i> 8, eabo1754 · <a href="https://doi.org/10.1126/sciadv.abo1754" target="_blank" rel="noopener">doi:10.1126/sciadv.abo1754</a></div></div></li>
+      <li><span class="yr">2022</span><div><span class="t">A global atlas of potential thermal refugia for coral reefs generated by internal gravity waves</span><span class="a">Bachman, S. D., Kleypas, J. A., Erdmann, M., and <b>Setyawan, E.</b></span><div class="j"><i>Frontiers in Marine Science</i> 9, 921879 · <a href="https://doi.org/10.3389/fmars.2022.921879" target="_blank" rel="noopener">doi:10.3389/fmars.2022.921879</a></div></div></li>
+      <li><span class="yr">2022</span><div><span class="t">Marine conservation in the Sunda Banda Seascape, Indonesia</span><span class="a">Estradivari, Andradi-Brown, D. A., … <b>Setyawan, E.</b>, … Ahmadia, G.</span><div class="j"><i>Marine Policy</i> 138, 104994 · <a href="https://doi.org/10.1016/j.marpol.2022.104994" target="_blank" rel="noopener">doi:10.1016/j.marpol.2022.104994</a></div></div></li>
+      <li><span class="yr">2022</span><div><span class="t">Reef manta ray social dynamics depend on individual differences in behaviour</span><span class="a">Perryman, R. J. Y., Mourier, J., Venables, S. K., Tapilatu, R. F., <b>Setyawan, E.</b>, and Brown, C.</span><div class="j"><i>Animal Behaviour</i> 191, 43–55 · <a href="https://doi.org/10.1016/j.anbehav.2022.06.010" target="_blank" rel="noopener">doi:10.1016/j.anbehav.2022.06.010</a></div></div></li>
+      <li data-lead><span class="yr">2022</span><div><span class="t">A holistic approach to manta ray conservation in the Papuan Bird's Head Seascape: resounding success, ongoing challenges</span><span class="a"><b>Setyawan, E.</b>, Erdmann, M. V., Gunadharma, N., Gunawan, T., Hasan, A. W., Izuan, M., et al.</span><div class="j"><i>Marine Policy</i> 137, 104953 · <a href="https://doi.org/10.1016/j.marpol.2021.104953" target="_blank" rel="noopener">doi:10.1016/j.marpol.2021.104953</a></div></div></li>
+      <li data-lead><span class="yr">2022</span><div><span class="t">Residency and use of an important nursery habitat, Raja Ampat's Wayag Lagoon, by juvenile reef manta rays (<i>Mobula alfredi</i>)</span><span class="a"><b>Setyawan, E.</b>, Erdmann, M. V., Mambrasar, R., Hasan, A. W., Sianipar, A. B., Constantine, R., et al.</span><div class="j"><i>Frontiers in Marine Science</i> 9 · <a href="https://doi.org/10.3389/fmars.2022.815094" target="_blank" rel="noopener">doi:10.3389/fmars.2022.815094</a></div></div></li>
+      <li data-lead><span class="yr">2022</span><div><span class="t">Population estimates of photo-identified individuals using a modified POPAN model reveal that Raja Ampat's reef manta rays are thriving</span><span class="a"><b>Setyawan, E.</b>, Stevenson, B. C., Erdmann, M. V., Hasan, A. W., Sianipar, A. B., Mofu, I., et al.</span><div class="j"><i>Frontiers in Marine Science</i> 9, 1014791 · <a href="https://doi.org/10.3389/fmars.2022.1014791" target="_blank" rel="noopener">doi:10.3389/fmars.2022.1014791</a></div></div></li>
+      <li data-lead><span class="yr">2022</span><div><span class="t">How big is that manta ray? A novel and non-invasive method for measuring reef manta rays using small drones</span><span class="a"><b>Setyawan, E.</b>, Stevenson, B. C., Izuan, M., Constantine, R., and Erdmann, M. V.</span><div class="j"><i>Drones</i> 6, 63 · <a href="https://doi.org/10.3390/drones6030063" target="_blank" rel="noopener">doi:10.3390/drones6030063</a></div></div></li>
+      <li><span class="yr">2020</span><div><span class="t">Predicting mobulid ray distribution in coastal areas of Lesser Sunda Seascape: implication for spatial and fisheries management</span><span class="a">Putra, M. I. H., <b>Setyawan, E.</b>, Laglbauer, B. J. L., Lewis, S., Dharmadi, D., Sianipar, A., et al.</span><div class="j"><i>Ocean &amp; Coastal Management</i> 198, 105328 · <a href="https://doi.org/10.1016/j.ocecoaman.2020.105328" target="_blank" rel="noopener">doi:10.1016/j.ocecoaman.2020.105328</a></div></div></li>
+      <li data-lead><span class="yr">2020</span><div><span class="t">Natural history of manta rays in the Bird's Head Seascape, Indonesia, with an analysis of the demography and spatial ecology of <i>Mobula alfredi</i> (Elasmobranchii: Mobulidae)</span><span class="a"><b>Setyawan, E.</b>, Erdmann, M. V., Lewis, S. A., Mambrasar, R., Hasan, A. W., Templeton, S., et al.</span><div class="j"><i>Journal of the Ocean Science Foundation</i> 36, 49–83 · <a href="https://doi.org/10.5281/zenodo.4396260" target="_blank" rel="noopener">doi:10.5281/zenodo.4396260</a></div></div></li>
+      <li><span class="yr">2019</span><div><span class="t">Population dynamics of oceanic manta rays (<i>Mobula birostris</i>) in the Raja Ampat Archipelago, West Papua, Indonesia, and the impacts of the El Niño–Southern Oscillation on their movement ecology</span><span class="a">Beale, C. S., Stewart, J. D., <b>Setyawan, E.</b>, Sianipar, A. B., and Erdmann, M. V.</span><div class="j"><i>Diversity and Distributions</i> 25, 1472–1487 · <a href="https://doi.org/10.1111/ddi.12962" target="_blank" rel="noopener">doi:10.1111/ddi.12962</a></div></div></li>
+      <li data-lead><span class="yr">2018</span><div><span class="t">Site fidelity and movement patterns of reef manta rays (<i>Mobula alfredi</i>: Mobulidae) using passive acoustic telemetry in northern Raja Ampat, Indonesia</span><span class="a"><b>Setyawan, E.</b>, Sianipar, A. B., Erdmann, M. V., Fischer, A. M., Haddy, J. A., Beale, C. S., et al.</span><div class="j"><i>Nature Conservation Research</i> 3, 17–31 · <a href="https://doi.org/10.24189/ncr.2018.043" target="_blank" rel="noopener">doi:10.24189/ncr.2018.043</a></div></div></li>
+      <li><span class="yr">2018</span><div><span class="t">Correcting for missing and irregular data in home-range estimation</span><span class="a">Fleming, C., Sheldon, D., Fagan, W., … <b>Setyawan, E.</b>, Sianipar, A.</span><div class="j"><i>Ecological Applications</i> 28, 1003–1010 · <a href="https://doi.org/10.1002/eap.1704" target="_blank" rel="noopener">doi:10.1002/eap.1704</a></div></div></li>
+    </ol>
+
+    <details class="more">
+      <summary>Theses</summary>
+      <ul>
+        <li><b>Setyawan, E.</b> (2023). <a href="https://researchspace.auckland.ac.nz/handle/2292/67033" target="_blank" rel="noopener">Movement ecology, population dynamics, and conservation of reef manta rays (<i>Mobula alfredi</i>) in Raja Ampat, Indonesia</a>. PhD thesis, The University of Auckland.</li>
+        <li><b>Setyawan, E.</b> (2016). Correlating environmental parameters with the movement patterns and site fidelity of reef manta ray (<i>Manta alfredi</i>) using acoustic telemetry and remote sensing in Raja Ampat, Indonesia. MSc thesis, The University of Tasmania.</li>
+      </ul>
+    </details>
+
+    <details class="more">
+      <summary>Books, chapters and reports</summary>
+      <ul>
+        <li><b>Setyawan, E.</b> (2025). Migratory species in the Lesser Sunda Seascape: current knowledge and research gaps. Konservasi Indonesia.</li>
+        <li>Putra, M. I. H., Syakurachman, I., Hasan, A. W., Prasetio, H., Sanjaya, I., <b>Setyawan, E.</b>, et al. (2025). Kajian awal: potret populasi, habitat, dan nilai ekonomi hiu paus untuk pengembangan kawasan konservasi di Teluk Saleh, Provinsi Nusa Tenggara Barat. Konservasi Indonesia.</li>
+        <li><b>Setyawan, E.</b>, Estradivari, Andradi-Brown, D. A., et al. (2018). State of the Sunda Banda Seascape Marine Protected Area Network – 2017, summary report. <a href="https://doi.org/10.6084/m9.figshare.6397292.v1" target="_blank" rel="noopener">doi:10.6084/m9.figshare.6397292.v1</a></li>
+        <li><b>Setyawan, E.</b>, Hidayat, N., Pada, D., Mambrasar, R. (2014). Reef health and fisheries resource in Kaimana Management Area, Kaimana Marine Protected Area. Conservation International Indonesia.</li>
+        <li><b>Setyawan, E.</b>, Hidayat, N., Pada, D., Mambrasar, R. (2014). The status of coral reef and fish population: monitoring on the effectiveness of Raja Ampat Marine Protected Area Network 2010–2014. Conservation International Indonesia.</li>
+        <li>Idris, <b>Setyawan, E.</b>, Mardesyawati, A. (2011). Environmentally friendly fishing methods for ornamental reef fish. TERANGI Foundation. (In Indonesian)</li>
+        <li><b>Setyawan, E.</b>, Yusri, S., Timotius, S. (eds) (2011). Coral reefs of Jakarta: long term monitoring on coral reefs in Seribu Islands (2005–2009). TERANGI Foundation. (In Indonesian)</li>
+        <li><b>Setyawan, E.</b>, Estradivari, Yusri, S. (eds) (2009). Exploring the coastal ecosystem of Seribu Islands. IPB Press. (In Indonesian)</li>
+        <li>Estradivari, <b>Setyawan, E.</b>, Yusri, S. (eds) (2009). Coral reefs of Jakarta: long term monitoring on coral reefs in Seribu Islands (2003–2007). TERANGI Foundation. (In Indonesian)</li>
+      </ul>
+    </details>
+
+    <details class="more">
+      <summary>Popular articles</summary>
+      <ul>
+        <li><span class="lang">EN</span><a href="https://theconversation.com/we-discovered-raja-ampats-reef-manta-rays-prefer-staying-close-to-home-which-could-help-us-save-more-of-them-230692" target="_blank" rel="noopener">We discovered Raja Ampat's reef manta rays prefer staying close to home</a> · The Conversation</li>
+        <li><span class="lang">EN</span><a href="https://theconversation.com/reef-manta-rays-are-in-decline-globally-but-new-research-finds-one-place-in-indonesia-where-these-charismatic-rays-are-thriving-194366" target="_blank" rel="noopener">Reef manta rays are in decline globally, but one place in Indonesia is thriving</a> · The Conversation</li>
+        <li><span class="lang">EN</span><a href="https://theconversation.com/baby-manta-rays-new-light-shed-on-their-life-in-indonesian-aquatic-playground-188657" target="_blank" rel="noopener">Baby manta rays: new light shed on their life in Indonesian aquatic playground</a> · The Conversation</li>
+        <li><span class="lang">EN</span><a href="https://birdsheadseascape.com/diving/measuring-mantas-how-and-why-a-novel-approach-by-edy-setyawan/" target="_blank" rel="noopener">Measuring mantas: how and why, a novel approach</a> · Bird's Head Seascape</li>
+        <li><span class="lang">ID</span><a href="https://theconversation.com/tambang-nikel-di-raja-ampat-ancam-habitat-hewan-langka-pari-manta-266782" target="_blank" rel="noopener">Tambang nikel di Raja Ampat ancam habitat hewan langka pari manta</a> · The Conversation Indonesia</li>
+        <li><span class="lang">ID</span><a href="https://theconversation.com/pari-manta-karang-lebih-sering-beredar-di-luar-kawasan-konservasi-riset-ungkap-sejumlah-area-habitat-baru-254599" target="_blank" rel="noopener">Pari manta karang lebih sering beredar di luar kawasan konservasi</a> · The Conversation Indonesia</li>
+        <li><span class="lang">ID</span><a href="https://theconversation.com/drama-bawah-laut-raja-ampat-ketika-pari-manta-oseanik-mendekati-pari-manta-karang-247108" target="_blank" rel="noopener">Drama bawah laut Raja Ampat: ketika pari manta oseanik mendekati pari manta karang</a> · The Conversation Indonesia</li>
+        <li><span class="lang">ID</span><a href="https://theconversation.com/riset-ungkap-pari-manta-karang-raja-ampat-tergolong-anak-rumahan-di-habitatnya-228419" target="_blank" rel="noopener">Riset ungkap pari manta karang Raja Ampat tergolong "anak rumahan" di habitatnya</a> · The Conversation Indonesia</li>
+        <li><span class="lang">ID</span><a href="https://theconversation.com/riset-buktikan-populasi-pari-manta-karang-terus-tumbuh-di-raja-ampat-buah-dari-kebijakan-dan-upaya-konservasi-195200" target="_blank" rel="noopener">Riset buktikan populasi pari manta karang terus tumbuh di Raja Ampat</a> · The Conversation Indonesia</li>
+        <li><span class="lang">ID</span><a href="https://theconversation.com/pengelolaan-laguna-wayag-penting-untuk-pastikan-kelangsungan-populasi-pari-manta-di-raja-ampat-188670" target="_blank" rel="noopener">Pengelolaan Laguna Wayag penting untuk pastikan kelangsungan populasi pari manta</a> · The Conversation Indonesia</li>
+        <li><span class="lang">ID</span><a href="https://theconversation.com/ilmuwan-indonesia-buktikan-raja-ampat-jadi-taman-bermain-bayi-pari-manta-186383" target="_blank" rel="noopener">Ilmuwan Indonesia buktikan Raja Ampat jadi "taman bermain" bayi pari manta</a> · The Conversation Indonesia</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<!-- PHOTOGRAPHY -->
+<section id="photography" class="photo">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Photography</p>
+      <h2>From the field</h2>
+      <p>Images from fieldwork in Raja Ampat, most taken at night on shallow reef flats and seagrass beds where epaulette sharks hunt. Select a photo to view it full size.</p>
+    </div>
+    <div class="gallery" id="gallery">
+      <button type="button" class="big" data-full="images/wayag-aerial.jpg" data-cap="Wayag, northern Raja Ampat. Its lagoon holds the world's first confirmed reef manta ray nursery."><img src="images/wayag-aerial-sm.jpg" alt="Aerial view of karst islands and turquoise lagoons at Wayag" loading="lazy"></button>
+      <button type="button" data-full="images/epaulette-walking.jpg" data-cap="Epaulette shark walking across sand at night, with a remora on its back. &lt;i&gt;Hemiscyllium freycineti&lt;/i&gt;"><img src="images/epaulette-walking-sm.jpg" alt="Long spotted epaulette shark moving across white sand" loading="lazy"></button>
+      <button type="button" data-full="images/manta-surface-feeding.jpg" data-cap="Manta ray feeding at the surface, photographed by drone."><img src="images/manta-surface-feeding-sm.jpg" alt="Manta ray with mouth open at the surface of turquoise water, seen from above" loading="lazy"></button>
+      <button type="button" data-full="images/epaulette-seagrass-night.jpg" data-cap="Epaulette shark hunting through a seagrass bed at night."><img src="images/epaulette-seagrass-night-sm.jpg" alt="Epaulette shark lit by a torch among seagrass" loading="lazy"></button>
+      <button type="button" data-full="images/epaulette-split-level.jpg" data-cap="Over-under view of an epaulette shark in ankle-deep water on a seagrass flat."><img src="images/epaulette-split-level-sm.jpg" alt="Split-level photo showing the water surface above an epaulette shark in seagrass" loading="lazy"></button>
+      <button type="button" class="wide" data-full="images/manta-ventral.jpg" data-cap="The belly spots of every manta ray are unique, which lets us identify individuals from photographs."><img src="images/manta-ventral-sm.jpg" alt="Underside of a manta ray with distinctive dark spots" loading="lazy"></button>
+      <button type="button" data-full="images/epaulette-seagrass-closeup.jpg" data-cap="Close-up of an epaulette shark sheltering in seagrass."><img src="images/epaulette-seagrass-closeup-sm.jpg" alt="Close-up of an epaulette shark's spotted head among seagrass blades" loading="lazy"></button>
+      <button type="button" data-full="images/epaulette-reef-ledge.jpg" data-cap="Epaulette shark resting beneath a reef ledge."><img src="images/epaulette-reef-ledge-sm.jpg" alt="Epaulette shark lying on sand under a rocky reef" loading="lazy"></button>
+      <button type="button" data-full="images/epaulette-rubble.jpg" data-cap="Epaulette shark on coral rubble, showing the dark shoulder spot that gives the species its name."><img src="images/epaulette-rubble-sm.jpg" alt="Epaulette shark on coral rubble with a large dark spot behind its head" loading="lazy"></button>
+      <button type="button" data-full="images/epaulette-hiding.jpg" data-cap="Epaulette shark half-hidden in a dense seagrass meadow."><img src="images/epaulette-hiding-sm.jpg" alt="Epaulette shark peering out from dark seagrass" loading="lazy"></button>
+      <button type="button" data-full="images/epaulette-shallows.jpg" data-cap="Over-under view of an epaulette shark among algae on a shallow reef flat."><img src="images/epaulette-shallows-sm.jpg" alt="Split-level photo of an epaulette shark among algae and rubble" loading="lazy"></button>
+    </div>
+    <p class="credit">All photographs © Edy Setyawan. Please ask before reusing.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="label">Contact</p>
+      <h2>Let's work together</h2>
+      <p style="margin-top:1rem;color:var(--muted);max-width:32rem">I welcome enquiries about research collaboration, student projects, conservation partnerships, media and photo licensing.</p>
+      <div class="mail">
+        <code id="email">edy@elasmobranchinstitute.id</code>
+        <button type="button" id="copy">Copy email</button>
+      </div>
+    </div>
+    <ul class="links">
+      <li><a href="https://orcid.org/0000-0001-6629-5997" target="_blank" rel="noopener"><span>ORCID</span><span>0000-0001-6629-5997</span></a></li>
+      <li><a href="https://scholar.google.com/citations?user=SKaJSLcAAAAJ" target="_blank" rel="noopener"><span>Google Scholar</span><span>Citations</span></a></li>
+      <li><a href="https://www.linkedin.com/in/edysetyawan/" target="_blank" rel="noopener"><span>LinkedIn</span><span>in/edysetyawan</span></a></li>
+      <li><a href="https://www.pew.org/en/projects/marine-fellows/fellows-directory/2025/edy--setyawan" target="_blank" rel="noopener"><span>Pew Marine Fellows</span><span>Profile</span></a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Edy Setyawan</span>
+    <span>Elasmobranch Institute Indonesia</span>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="Photo viewer">
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button type="button" class="ctrl prev" id="lb-prev" aria-label="Previous photo">‹</button>
+  <button type="button" class="ctrl next" id="lb-next" aria-label="Next photo">›</button>
+  <button type="button" class="ctrl close" id="lb-close" aria-label="Close">×</button>
+</dialog>
+
+<script>
+(function(){
+  // Publication filter
+  var all=document.getElementById('f-all'), lead=document.getElementById('f-lead'),
+      items=[].slice.call(document.querySelectorAll('#pubs li')), count=document.getElementById('pub-count');
+  function setFilter(onlyLead){
+    all.setAttribute('aria-pressed', String(!onlyLead));
+    lead.setAttribute('aria-pressed', String(onlyLead));
+    var n=0;
+    items.forEach(function(li){ var show=!onlyLead || li.hasAttribute('data-lead'); li.hidden=!show; if(show) n++; });
+    count.textContent = n + (onlyLead ? ' first-author' : '');
+  }
+  all.addEventListener('click',function(){setFilter(false)});
+  lead.addEventListener('click',function(){setFilter(true)});
+  setFilter(false);
+
+  // Lightbox
+  var btns=[].slice.call(document.querySelectorAll('#gallery button')), lb=document.getElementById('lb'),
+      img=document.getElementById('lb-img'), cap=document.getElementById('lb-cap'), idx=0;
+  function show(i){
+    idx=(i+btns.length)%btns.length; var b=btns[idx];
+    img.src=b.dataset.full; img.alt=b.querySelector('img').alt; cap.innerHTML=b.dataset.cap;
+  }
+  btns.forEach(function(b,i){ b.addEventListener('click',function(){ show(i); if(lb.showModal) lb.showModal(); else lb.setAttribute('open',''); }); });
+  document.getElementById('lb-prev').addEventListener('click',function(){show(idx-1)});
+  document.getElementById('lb-next').addEventListener('click',function(){show(idx+1)});
+  document.getElementById('lb-close').addEventListener('click',function(){lb.close()});
+  lb.addEventListener('click',function(e){ if(e.target===lb) lb.close(); });
+  lb.addEventListener('keydown',function(e){ if(e.key==='ArrowLeft') show(idx-1); if(e.key==='ArrowRight') show(idx+1); });
+
+  // Copy email
+  var copy=document.getElementById('copy'), email=document.getElementById('email');
+  copy.addEventListener('click',function(){
+    var t=email.textContent;
+    function selectIt(){ var r=document.createRange(); r.selectNodeContents(email); var s=getSelection(); s.removeAllRanges(); s.addRange(r); copy.textContent='Press Ctrl/⌘ + C'; }
+    try{ navigator.clipboard.writeText(t).then(function(){ copy.textContent='Copied'; setTimeout(function(){copy.textContent='Copy email'},2000); }, selectIt); }catch(e){ selectIt(); }
+  });
+})();
+</script>
+</body>
+</html>
