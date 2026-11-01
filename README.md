@@ -1,4 +1,4 @@
-# edysetyawan.github.io
+# edysetyawan-lab.github.io
 
 Personal website of Edy Setyawan, PhD. It's a plain HTML site: one page (`index.html`) plus an `images/` folder. GitHub Pages hosts it for free.
 
