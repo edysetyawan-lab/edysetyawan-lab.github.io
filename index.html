@@ -6,7 +6,7 @@
 <meta name="description" content="Edy Setyawan, PhD: marine scientist studying the movement and population ecology of manta rays, sharks and other elasmobranchs in Indonesia.">
 <meta property="og:title" content="Edy Setyawan, PhD">
 <meta property="og:description" content="Elasmobranch research, conservation and underwater photography from Raja Ampat, Indonesia.">
-<meta property="og:image" content="https://edysetyawan.github.io/images/manta-ventral.jpg">
+<meta property="og:image" content="https://edysetyawan-lab.github.io/images/manta-ventral.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A1C24'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23E39B68' text-anchor='middle'%3EES%3C/text%3E%3C/svg%3E">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 <title>Edy Setyawan, PhD</title>
@@ -199,6 +199,37 @@ dialog.lb::backdrop{background:rgba(3,10,13,.92)}
 @media (max-width:820px){.contact-grid{grid-template-columns:1fr}}
 footer{border-top:1px solid var(--line);padding-block:2rem;font-size:.85rem;color:var(--muted)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+
+/* ---------- research programs ---------- */
+.programs{display:grid;border-top:1px solid var(--line)}
+.prog{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(1.25rem,4vw,3.5rem);padding-block:2.25rem;border-bottom:1px solid var(--line)}
+.prog-id{display:grid;gap:.45rem;align-content:start}
+.prog-id .bin{font:italic 400 1.05rem/1.3 var(--display);color:var(--accent)}
+.prog-id .where{font:500 .78rem/1.4 var(--mono);color:var(--muted);letter-spacing:.04em}
+.status{justify-self:start;font:600 .72rem/1 var(--body);padding:.4rem .6rem;border-radius:999px;background:var(--accent-soft);color:var(--ink);margin-top:.35rem}
+.prog-body{display:grid;gap:1rem;max-width:44rem}
+.prog-body > p{color:var(--ink)}
+.papers{list-style:none;margin:.25rem 0 0;padding:0;display:grid;gap:.6rem}
+.papers li{display:grid;grid-template-columns:3rem minmax(0,1fr);gap:.75rem;font-size:.9rem;line-height:1.5}
+.papers .yr{font:500 .82rem/1.6 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.papers a{color:var(--ink);text-decoration-color:var(--line)}
+.papers a:hover{color:var(--accent);text-decoration-color:currentColor}
+.role{font:500 .66rem/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:.2rem .35rem;margin-left:.35rem;vertical-align:1px;white-space:nowrap}
+.role.lead{color:var(--accent);border-color:currentColor}
+.papers-h{font:500 .72rem/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.also{margin-top:2rem;color:var(--muted);font-size:.93rem;max-width:52rem}
+.method-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1.5rem 2rem;margin-top:1rem}
+@media (max-width:1000px){.method-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.method-grid{grid-template-columns:1fr}}
+.method-grid h3{font-size:1.1rem;margin-bottom:.35rem}
+.method-grid p{font-size:.9rem;color:var(--muted)}
+.proj-list{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.proj-list li{border-bottom:1px solid var(--line)}
+.proj-list a{display:flex;justify-content:space-between;gap:1rem;padding:.8rem 0;text-decoration:none;color:var(--ink)}
+.proj-list a span:last-child{font:400 .8rem/1.6 var(--mono);color:var(--muted);text-align:right}
+.proj-list a:hover span:first-child{color:var(--accent)}
+@media (max-width:820px){.prog{grid-template-columns:1fr}}
+@media (max-width:480px){.proj-list a{flex-direction:column;gap:.1rem}.proj-list a span:last-child{text-align:left}}
 </style>
 </head>
 <body>
@@ -225,11 +256,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
     <div class="hero-text">
       <p class="label">Marine scientist · Raja Ampat, Indonesia</p>
       <h1>Following sharks and rays to <em>protect</em> them.</h1>
-      <p class="lede">I study the movement and population ecology of manta rays, whale sharks and other elasmobranchs across Indonesia, and turn what we learn into stronger marine protection.</p>
+      <p class="lede">I study the movement and population ecology of manta rays, whale sharks and other elasmobranchs in Indonesia and beyond, and turn what we learn into stronger marine protection.</p>
       <div class="creds">
         <span>National Geographic Explorer</span>
         <span>Pew Marine Fellow 2025</span>
-        <span>Co-founder, Institute Indonesia</span>
+        <span>Co-founder, Elasmobranch Institute Indonesia</span>
       </div>
       <div class="cta">
         <a class="btn primary" href="#publications">Read the research</a>
@@ -245,9 +276,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
     <div>
       <div class="sec-head"><p class="label">About</p><h2>Fifteen years in Indonesia's seas</h2></div>
       <div class="prose">
-        <p>Since 2013 I have followed the reef manta rays of Raja Ampat, and the work has grown to include whale sharks, thresher sharks and the endemic walking sharks of eastern Indonesia.</p>
+        <p>Since 2013 I have followed the reef manta rays of Raja Ampat. The work has grown to include whale sharks, leopard sharks, walking sharks and oceanic manta rays, in Indonesia and New Zealand.</p>
         <p>My research combines photo-identification, drones, acoustic and satellite telemetry, and network analysis to answer practical questions: where animals go, how long they stay, how populations change, and which habitats matter most. Those answers feed directly into the design and management of marine protected areas in Indonesia and beyond.</p>
-        <p>My PhD at the University of Auckland examined the movement ecology, population dynamics and conservation of reef manta rays in Raja Ampat. Today I am Lead Conservation Scientist at the Institute Indonesia, which I co-founded.</p>
+        <p>My PhD at the University of Auckland examined the movement ecology, population dynamics and conservation of reef manta rays in Raja Ampat. Today I am Lead Conservation Scientist at the Elasmobranch Institute Indonesia, which I co-founded.</p>
       </div>
     </div>
     <div class="facts">
@@ -301,26 +332,109 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
   <div class="wrap">
     <div class="sec-head">
       <p class="label">Research</p>
-      <h2>Species I work with</h2>
-      <p>My focus is spatial movement, habitat use and connectivity of conservation-priority elasmobranchs, from oceanic giants to sharks that walk across reef flats.</p>
+      <h2>Five research programs</h2>
+      <p>Each program applies the same population and movement framework to a different species and seascape, asking the questions managers need answered: how many animals there are, whether numbers are changing, where they go, and whether protected areas cover the places that matter.</p>
     </div>
-    <div class="species">
-      <div class="sp-card"><h3>Reef manta ray</h3><p class="bin">Mobula alfredi</p><p>Residency, connectivity and population trends across the Raja Ampat archipelago, using photo-ID, acoustic and satellite tags.</p></div>
-      <div class="sp-card"><h3>Oceanic manta ray</h3><p class="bin">Mobula birostris</p><p>Cleaning-station visits, deep-diving behaviour and population dynamics in the Bird's Head Seascape.</p></div>
-      <div class="sp-card"><h3>Whale shark</h3><p class="bin">Rhincodon typus</p><p>Demographics and residency of photo-identified sharks, and national patterns in strandings.</p></div>
-      <div class="sp-card"><h3>Pelagic thresher shark</h3><p class="bin">Alopias pelagicus</p><p>Satellite and passive acoustic telemetry to inform local conservation in central Indonesia.</p></div>
-      <div class="sp-card"><h3>Raja Ampat epaulette shark</h3><p class="bin">Hemiscyllium freycineti</p><p>Distribution, population genetics and fine-scale movement of an endemic walking shark.</p></div>
-      <div class="sp-card"><h3>Indo-Pacific leopard shark</h3><p class="bin">Stegostoma tigrinum</p><p>Part of my expanding work on reef-associated sharks in eastern Indonesia.</p></div>
+    <div class="programs">
+    <article class="prog" id="p-reef-manta">
+      <div class="prog-id">
+        <h3>Reef manta rays</h3>
+        <p class="bin">Mobula alfredi</p>
+        <p class="where">Raja Ampat · expanding across Indonesia</p>
+        <span class="status">Flagship program</span>
+      </div>
+      <div class="prog-body">
+        <p>My flagship program tracks the reef manta rays of Raja Ampat: population size and trends, survival, site fidelity at cleaning stations and feeding areas, and movement between sites and marine protected areas.</p>
+        <p>Indonesia gave manta rays full national protection in 2014, so this long-term dataset is a rare chance to measure how a protected population responds over time. The program is now expanding to manta populations across Indonesia, to show how they connect and where the main threats remain.</p>
+        <p class="papers-h">Recent papers</p>
+        <ul class="papers">
+          <li><span class="yr">2025</span><span><a href="https://doi.org/10.3390/fishes10020066" target="_blank" rel="noopener">Staying close to home: horizontal movements of satellite-tracked reef manta rays in the world's largest manta sanctuary</a><span class="role lead">Lead author</span></span></li>
+          <li><span class="yr">2024</span><span><a href="https://doi.org/10.1098/rsos.230895" target="_blank" rel="noopener">Spatial connectivity of reef manta rays across the Raja Ampat archipelago, Indonesia</a><span class="role lead">Lead author</span></span></li>
+          <li><span class="yr">2022</span><span><a href="https://doi.org/10.3389/fmars.2022.1014791" target="_blank" rel="noopener">Population estimates of photo-identified individuals using a modified POPAN model reveal that Raja Ampat's reef manta rays are thriving</a><span class="role lead">Lead author</span></span></li>
+          <li><span class="yr">2022</span><span><a href="https://doi.org/10.3389/fmars.2022.815094" target="_blank" rel="noopener">Residency and use of an important nursery habitat, Raja Ampat's Wayag Lagoon, by juvenile reef manta rays</a><span class="role lead">Lead author</span></span></li>
+          <li><span class="yr">2022</span><span><a href="https://doi.org/10.3390/drones6030063" target="_blank" rel="noopener">How big is that manta ray? A novel and non-invasive method for measuring reef manta rays using small drones</a><span class="role lead">Lead author</span></span></li>
+          <li><span class="yr">2022</span><span><a href="https://doi.org/10.1016/j.marpol.2021.104953" target="_blank" rel="noopener">A holistic approach to manta ray conservation in the Papuan Bird's Head Seascape: resounding success, ongoing challenges</a><span class="role lead">Lead author</span></span></li>
+          <li><span class="yr">2022</span><span><a href="https://doi.org/10.1016/j.anbehav.2022.06.010" target="_blank" rel="noopener">Reef manta ray social dynamics depend on individual differences in behaviour</a><span class="role">Co-author</span></span></li>
+        </ul>
+      </div>
+    </article>
+    <article class="prog" id="p-whale-shark">
+      <div class="prog-id">
+        <h3>Whale sharks</h3>
+        <p class="bin">Rhincodon typus</p>
+        <p class="where">Indonesia</p>
+      </div>
+      <div class="prog-body">
+        <p>Indonesia hosts several whale shark aggregations, many linked to lift-net (bagan) fisheries or to growing tourism. This program uses photo-identification to estimate how many individuals visit each site and how often they return, and telemetry to follow where they go between visits.</p>
+        <p>The results support sustainable tourism guidelines and help reduce risks from fisheries interactions and vessel strikes.</p>
+        <p class="papers-h">Recent papers</p>
+        <ul class="papers">
+          <li><span class="yr">2026</span><span><a href="https://doi.org/10.3389/fmars.2026.1808805" target="_blank" rel="noopener">Integrating behavioral movement and environmental preferences to map critical habitat of whale sharks using long-term satellite tracking</a><span class="role">Co-author</span></span></li>
+          <li><span class="yr">2026</span><span><a href="https://doi.org/10.1186/s40317-026-00462-4" target="_blank" rel="noopener">Methods for tagging whale sharks: insights into performance and best practices with a focus on clamp attachments</a><span class="role">Co-author</span></span></li>
+          <li><span class="yr">2025</span><span><a href="https://doi.org/10.3389/fmars.2025.1607027" target="_blank" rel="noopener">Insights into the population demographics and residency patterns of photo-identified whale sharks in the Bird's Head Seascape, Indonesia</a><span class="role lead">Lead author</span></span></li>
+          <li><span class="yr">2025</span><span><a href="https://doi.org/10.1038/s41598-025-20543-3" target="_blank" rel="noopener">Spatio-temporal patterns, trends, and oceanographic drivers of whale shark strandings in Indonesia</a><span class="role">Co-author</span></span></li>
+        <li><span class="yr">2025</span><span><a href="https://doi.org/10.3390/d17120839" target="_blank" rel="noopener">First evidence of neonatal whale sharks in Saleh Bay, West Nusa Tenggara, Indonesia</a><span class="role">Co-author</span></span></li>
+        </ul>
+      </div>
+    </article>
+    <article class="prog" id="p-leopard-shark">
+      <div class="prog-id">
+        <h3>Indo-Pacific leopard sharks</h3>
+        <p class="bin">Stegostoma tigrinum</p>
+        <p class="where">Derawan Islands, East Kalimantan</p>
+        <span class="status">Project under way</span>
+      </div>
+      <div class="prog-body">
+        <p>The leopard shark is listed as Endangered on the IUCN Red List, and its populations have declined across much of its range. This project estimates local abundance in the Derawan Islands, identifies important habitats, and measures how far individuals move.</p>
+        <p>The findings will guide protection of the species within the Berau marine area and inform regional efforts, including potential future reintroduction programs elsewhere.</p>
+      </div>
+    </article>
+    <article class="prog" id="p-oceanic-manta">
+      <div class="prog-id">
+        <h3>Oceanic manta rays</h3>
+        <p class="bin">Mobula birostris</p>
+        <p class="where">Northern New Zealand · Bird's Head Seascape</p>
+        <span class="status">New in New Zealand</span>
+      </div>
+      <div class="prog-body">
+        <p>Oceanic manta rays visit northern New Zealand seasonally, yet little is known about these populations. This project applies the methods developed in Indonesia to a temperate setting: how many oceanic mantas use New Zealand waters, when they arrive, how long they stay, and how they move through the wider South Pacific.</p>
+        <p>It also builds collaboration between Indonesian and New Zealand researchers on a globally threatened species, and draws on our earlier oceanic manta work in Indonesia.</p>
+        <p class="papers-h">Related papers from Indonesia</p>
+        <ul class="papers">
+          <li><span class="yr">2025</span><span><a href="https://doi.org/10.3389/fmars.2025.1630451" target="_blank" rel="noopener">Deep diving behaviour in oceanic manta rays and its potential function</a><span class="role">Co-author</span></span></li>
+          <li><span class="yr">2024</span><span><a href="https://doi.org/10.3389/frish.2024.1432244" target="_blank" rel="noopener">Insights into the visitations of oceanic manta rays at cleaning stations on coral reefs in the Bird's Head Seascape, eastern Indonesia</a><span class="role lead">Lead author</span></span></li>
+          <li><span class="yr">2024</span><span><a href="https://doi.org/10.3390/d16060319" target="_blank" rel="noopener">First documented courtship behavior between <i>Mobula birostris</i> and <i>M. alfredi</i> at a coral reef cleaning station in Misool, Raja Ampat</a><span class="role lead">Lead author</span></span></li>
+          <li><span class="yr">2019</span><span><a href="https://doi.org/10.1111/ddi.12962" target="_blank" rel="noopener">Population dynamics of oceanic manta rays in the Raja Ampat Archipelago and the impacts of the El Niño–Southern Oscillation on their movement ecology</a><span class="role">Co-author</span></span></li>
+        </ul>
+      </div>
+    </article>
+    <article class="prog" id="p-epaulette">
+      <div class="prog-id">
+        <h3>Epaulette (walking) sharks</h3>
+        <p class="bin">Hemiscyllium spp.</p>
+        <p class="where">Raja Ampat · Bird's Head Seascape</p>
+        <span class="status">Pew Fellowship 2025–2028</span>
+      </div>
+      <div class="prog-body">
+        <p>The Bird's Head Seascape is home to several species of walking sharks, some found nowhere else on Earth. They walk across shallow reefs on their fins and disperse very little, so local populations are vulnerable to habitat loss and fishing.</p>
+        <p>This project studies their abundance, home ranges and movements in Raja Ampat and the wider Bird's Head region. It provides the baseline needed to protect these endemic species, which have also become a draw for night-dive tourism.</p>
+        <p class="papers-h">Recent papers</p>
+        <ul class="papers">
+          <li><span class="yr">2026</span><span><a href="https://doi.org/10.3389/frish.2026.1820382" target="_blank" rel="noopener">First assessment of life history and spatial ecology of the endemic Raja Ampat epaulette shark (<i>Hemiscyllium freycineti</i>) in the Dampier Strait, Indonesia</a><span class="role lead">Lead author</span></span></li>
+          <li><span class="yr">2026</span><span><a href="https://doi.org/10.1002/edn3.70281" target="_blank" rel="noopener">Tracking fin-prints on reef flats: a genus-specific eDNA metabarcoding assay for epaulette sharks with field validation in Raja Ampat</a><span class="role">Co-author</span></span></li>
+        </ul>
+      </div>
+    </article>
     </div>
-    <div class="methods">
-      <span class="label" style="margin-right:.5rem">Methods</span>
-      <span class="tag">Photo-identification</span>
-      <span class="tag">Drone photogrammetry</span>
-      <span class="tag">Acoustic telemetry</span>
-      <span class="tag">Satellite telemetry</span>
-      <span class="tag">Biologging</span>
-      <span class="tag">Network analysis</span>
-      <span class="tag">Population modelling</span>
+    <p class="also">I also contribute to collaborative studies of pelagic thresher sharks, pygmy blue whales and cetaceans, to global syntheses of megafauna tracking, threats and Important Shark and Ray Areas in Asia, and to statistical methods for drone-based morphometrics. See the <a href="#publications">full publication list</a>.</p>
+
+    <p class="label" style="margin-top:3.5rem">Methods</p>
+    <div class="method-grid">
+      <div><h3>Photo-identification</h3><p>Lifelong natural markings, such as manta belly spots and the spots of leopard and whale sharks, build catalogues of known individuals from researcher, dive operator and citizen scientist photos.</p></div>
+      <div><h3>Mark–recapture modelling</h3><p>Repeat sightings feed models that estimate population size, survival, residency and trends, the numbers managers need to judge whether protection works.</p></div>
+      <div><h3>Acoustic telemetry</h3><p>Receiver arrays at cleaning stations, feeding grounds and reefs reveal site fidelity, daily and seasonal movements, and connectivity between protected areas.</p></div>
+      <div><h3>Satellite telemetry</h3><p>Tags on wide-ranging species show long-distance movements, diving behaviour and open-ocean habitat use beyond the reach of receivers.</p></div>
+      <div><h3>Field surveys</h3><p>In-water surveys record sex, maturity, injuries, behaviour and habitat use, adding context such as fishing-gear injuries or distinctive colour forms.</p></div>
     </div>
   </div>
 </section>
@@ -328,23 +442,26 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
 <!-- LAB -->
 <section id="lab" class="lab">
   <div class="wrap lab-grid">
-    <figure>
-      <img src="images/epaulette-reef-ledge-sm.jpg" srcset="images/epaulette-reef-ledge-sm.jpg 800w, images/epaulette-reef-ledge.jpg 2000w" sizes="(max-width:820px) 100vw, 36rem" alt="Epaulette shark resting on sand beneath a reef ledge at night" loading="lazy">
-      <figcaption>Raja Ampat epaulette shark, <i class="sp">Hemiscyllium freycineti</i>.</figcaption>
-    </figure>
     <div class="lab-body">
       <p class="label">The lab</p>
       <h2>Elasmobranch Institute Indonesia</h2>
-      <p>I co-founded the Elasmobranch Institute Indonesia and have led its conservation science since 2024. We are an Indonesian research team working with government agencies, MPA managers and coastal communities to protect sharks and rays.</p>
-      <h3 style="margin-top:.5rem">Current project: Raja Ampat's walking sharks</h3>
-      <p>Supported by the Pew Fellowship in Marine Conservation (2025–2028), this project studies the endemic epaulette shark of Raja Ampat:</p>
-      <ul>
-        <li>Distribution surveys across the archipelago</li>
-        <li>Population genetics to measure connectivity and gene flow between sites</li>
-        <li>Biologging and passive acoustic tracking of movement and habitat use</li>
-        <li>Workshops with the Raja Ampat MPA management authority to put results into practice</li>
+      <p>Sharks and rays are among the most heavily exploited and least understood marine animals in Indonesia. I co-founded the Elasmobranch Institute Indonesia, and have led its conservation science since 2024, to build the scientific evidence the country needs to manage them.</p>
+      <p>Our starting point is that species which reproduce slowly, travel widely and depend on particular habitats need conservation built on solid, site-specific data. We work with local communities, government agencies, dive operators and conservation partners so that findings become management action: where to place and zone protected areas, how to manage wildlife tourism, and how to measure whether national protection is working.</p>
+      <p class="callout">We favour long time series over single field seasons. Community rangers and dive operators contribute sightings and fieldwork, which keeps monitoring going for years and builds local ownership of the results. We are also training the next generation of Indonesian shark and ray scientists. Students and researchers interested in joining or collaborating are welcome to <a href="#contact">get in touch</a>.</p>
+    </div>
+    <div class="lab-body">
+      <figure>
+        <img src="images/epaulette-reef-ledge-sm.jpg" srcset="images/epaulette-reef-ledge-sm.jpg 800w, images/epaulette-reef-ledge.jpg 2000w" sizes="(max-width:820px) 100vw, 36rem" alt="Epaulette shark resting on sand beneath a reef ledge at night" loading="lazy">
+        <figcaption>Raja Ampat epaulette shark, <i class="sp">Hemiscyllium freycineti</i>.</figcaption>
+      </figure>
+      <h3>Current projects</h3>
+      <ul class="proj-list">
+        <li><a href="#p-reef-manta"><span>Reef manta rays</span><span>Raja Ampat &amp; Indonesia</span></a></li>
+        <li><a href="#p-whale-shark"><span>Whale sharks</span><span>Indonesia</span></a></li>
+        <li><a href="#p-leopard-shark"><span>Leopard sharks</span><span>Derawan Islands</span></a></li>
+        <li><a href="#p-oceanic-manta"><span>Oceanic manta rays</span><span>New Zealand</span></a></li>
+        <li><a href="#p-epaulette"><span>Epaulette sharks</span><span>Bird's Head Seascape</span></a></li>
       </ul>
-      <p class="callout">Students and researchers interested in collaborating are welcome to <a href="#contact">get in touch</a>.</p>
     </div>
   </div>
 </section>
@@ -355,7 +472,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
     <div class="sec-head">
       <p class="label">Publications</p>
       <h2>Peer-reviewed papers</h2>
-      <p><span id="pub-count">24</span> papers. My name is in bold.</p>
+      <p><span id="pub-count">32</span> papers. My name is in bold.</p>
     </div>
     <div class="pub-tools">
       <div class="seg" role="group" aria-label="Filter publications">
@@ -369,6 +486,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
     </div>
 
     <ol class="pubs" id="pubs">
+      <li data-lead><span class="yr">2026</span><div><span class="t">First assessment of life history and spatial ecology of the endemic Raja Ampat epaulette shark (<i>Hemiscyllium freycineti</i>) in the Dampier Strait, Indonesia</span><span class="a"><b>Setyawan, E.</b>, Mambrasar, R., Hasan, A. W., Ambafen, O., Mofu, I., Saleo, N., et al.</span><div class="j"><i>Frontiers in Fish Science</i> 4, 1820382 · <a href="https://doi.org/10.3389/frish.2026.1820382" target="_blank" rel="noopener">doi:10.3389/frish.2026.1820382</a></div></div></li>
+      <li><span class="yr">2026</span><div><span class="t">Tracking fin-prints on reef flats: a genus-specific eDNA metabarcoding assay for epaulette sharks (<i>Hemiscyllium</i> spp.) with field validation in Raja Ampat</span><span class="a">Prabowo, D. A., <b>Setyawan, E.</b>, Hasan, A. W., Mambrasar, R., Prasetyo, A. P., Sutikno, S., et al.</span><div class="j"><i>Environmental DNA</i> 8(3), e70281 · <a href="https://doi.org/10.1002/edn3.70281" target="_blank" rel="noopener">doi:10.1002/edn3.70281</a></div></div></li>
+      <li><span class="yr">2026</span><div><span class="t">Integrating behavioral movement and environmental preferences to map critical habitat of whale sharks using long-term satellite tracking in the Indo-Pacific Ocean</span><span class="a">Putra, M. I. H., Wirasatriya, A., Sianipar, A., Hasan, A., <b>Setyawan, E.</b>, Syakurachman, I., et al.</span><div class="j"><i>Frontiers in Marine Science</i> 13, 1808805 · <a href="https://doi.org/10.3389/fmars.2026.1808805" target="_blank" rel="noopener">doi:10.3389/fmars.2026.1808805</a></div></div></li>
+      <li><span class="yr">2026</span><div><span class="t">Methods for tagging whale sharks: insights into performance and best practices with a focus on clamp attachments</span><span class="a">Womersley, F. C., Green, S., Garcia-Baciero, A., … <b>Setyawan, E.</b>, … Sims, D. W.</span><div class="j"><i>Animal Biotelemetry</i> 14, 22 · <a href="https://doi.org/10.1186/s40317-026-00462-4" target="_blank" rel="noopener">doi:10.1186/s40317-026-00462-4</a></div></div></li>
+      <li><span class="yr">2026</span><div><span class="t">Measurement error models for morphometric data</span><span class="a">Stevenson, B. C., Smit, E., and <b>Setyawan, E.</b></span><div class="j"><i>The Annals of Applied Statistics</i> 20(2), 945–962 · <a href="https://doi.org/10.1214/26-AOAS2164" target="_blank" rel="noopener">doi:10.1214/26-AOAS2164</a></div></div></li>
+      <li><span class="yr">2026</span><div><span class="t">Critical habitats for sharks and rays in Asia remain largely unprotected</span><span class="a">Gonzalez-Pestana, A., Kyne, P. M., García-Rodríguez, E., … <b>Setyawan, E.</b>, … Jabado, R. W.</span><div class="j"><i>Biodiversity and Conservation</i> 35, 179 · <a href="https://doi.org/10.1007/s10531-026-03356-2" target="_blank" rel="noopener">doi:10.1007/s10531-026-03356-2</a></div></div></li>
+      <li><span class="yr">2026</span><div><span class="t">Vulnerability of marine megafauna to global at-sea anthropogenic threats</span><span class="a">VanCompernolle, M., Morris, J., Calich, H. J., … <b>Setyawan, E.</b>, …</span><div class="j"><i>Conservation Biology</i> 40(1) · <a href="https://doi.org/10.1111/cobi.70147" target="_blank" rel="noopener">doi:10.1111/cobi.70147</a></div></div></li>
+      <li><span class="yr">2025</span><div><span class="t">First evidence of neonatal whale sharks (<i>Rhincodon typus</i>) in Saleh Bay, West Nusa Tenggara, Indonesia</span><span class="a">Syakurachman, I., Yasman, Y., Putra, M. I. H., Erdmann, M., Patria, M. P., and <b>Setyawan, E.</b></span><div class="j"><i>Diversity</i> 17(12), 839 · <a href="https://doi.org/10.3390/d17120839" target="_blank" rel="noopener">doi:10.3390/d17120839</a></div></div></li>
       <li><span class="yr">2025</span><div><span class="t">Spatio-temporal patterns, trends, and oceanographic drivers of whale shark strandings in Indonesia</span><span class="a">Putra, M. I. H., Wirasatriya, A., … <b>Setyawan, E.</b>, … Manessa, M. D. M.</span><div class="j"><i>Scientific Reports</i> 15, 36435 · <a href="https://doi.org/10.1038/s41598-025-20543-3" target="_blank" rel="noopener">doi:10.1038/s41598-025-20543-3</a></div></div></li>
       <li><span class="yr">2025</span><div><span class="t">Deep diving behaviour in oceanic manta rays and its potential function</span><span class="a">Beale, C. S., Runtuboy, F., Sianipar, A., Beer, A. J., Erdmann, M., <b>Setyawan, E.</b>, et al.</span><div class="j"><i>Frontiers in Marine Science</i> 12, 1630451 · <a href="https://doi.org/10.3389/fmars.2025.1630451" target="_blank" rel="noopener">doi:10.3389/fmars.2025.1630451</a></div></div></li>
       <li data-lead><span class="yr">2025</span><div><span class="t">Insights into the population demographics and residency patterns of photo-identified whale sharks <i>Rhincodon typus</i> in the Bird's Head Seascape, Indonesia</span><span class="a"><b>Setyawan, E.</b>, Hasan, A. W., Malaiholo, Y., Sianipar, A. B., Mambrasar, R., Meekan, M., et al.</span><div class="j"><i>Frontiers in Marine Science</i> 12, 1607027 · <a href="https://doi.org/10.3389/fmars.2025.1607027" target="_blank" rel="noopener">doi:10.3389/fmars.2025.1607027</a></div></div></li>
@@ -470,7 +595,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
       <h2>Let's work together</h2>
       <p style="margin-top:1rem;color:var(--muted);max-width:32rem">I welcome enquiries about research collaboration, student projects, conservation partnerships, media and photo licensing.</p>
       <div class="mail">
-        <code id="email">edy@elasmoinstitute.id</code>
+        <code id="email">edy@elasmobranchinstitute.id</code>
         <button type="button" id="copy">Copy email</button>
       </div>
     </div>
@@ -488,6 +613,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
 <footer>
   <div class="wrap">
     <span>© 2026 Edy Setyawan</span>
+    <span>Elasmobranch Institute Indonesia</span>
   </div>
 </footer>
 
