@@ -4,8 +4,8 @@ Personal website of Edy Setyawan, PhD. It's a plain HTML site: one page (`index.
 
 ## Publish it (one time, about 10 minutes)
 
-1. **Create a GitHub account** at https://github.com/signup. Use the username **edysetyawan**. The site address comes from the username, so the site will be at `https://edysetyawan.github.io`.
-2. **Create the repository.** Click **+ → New repository**, name it exactly `edysetyawan.github.io`, set it to **Public**, and click **Create repository**.
+1. **Create a GitHub account** at https://github.com/signup. Use the username **edysetyawan-lab**. The site address comes from the username, so the site will be at `https://edysetyawan-lab.github.io`.
+2. **Create the repository.** Click **+ → New repository**, name it exactly `edysetyawan-lab.github.io`, set it to **Public**, and click **Create repository**.
 3. **Upload the files.** On the new repository page, click **uploading an existing file**. Drag in `index.html`, `README.md` and the whole `images` folder (keep the folder name), then click **Commit changes**.
 4. **Turn on Pages.** Go to **Settings → Pages**. Under *Build and deployment*, choose *Deploy from a branch*, then select branch **main** and folder **/ (root)**, and click **Save**.
 5. **Wait 1–3 minutes**, then open https://edysetyawan-lab.github.io.
